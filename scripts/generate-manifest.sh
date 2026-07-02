@@ -36,6 +36,7 @@ for category in */; do
 
     entry=$(jq -n \
       --arg id "$pack_id" \
+      --arg category "$category" \
       --argjson total "$total" \
       --argjson formats "$formats" \
       --argjson config "$config_data" \
@@ -43,7 +44,7 @@ for category in */; do
         id: $id,
         count: $total,
         formats: $formats,
-        base_url: ("https://assets.seu-dominio.com/" + $id + "/"),
+        base_url: ("https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets/" + $category + "/" + $id + "/"),
         license: ($config.license // "unknown"),
         tags: ($config.tags // [])
       }'

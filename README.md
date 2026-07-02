@@ -1,6 +1,6 @@
 # Design Asset Library Pipeline
 
-Pipeline automatizada que extrai assets de repositórios open-source e publica no Cloudflare R2 para consumo por agentes de IA.
+Pipeline automatizada que extrai assets de repositórios open-source e publica via **jsDelivr CDN** para consumo por agentes de IA.
 
 ## Arquitetura
 
@@ -9,73 +9,46 @@ GitHub Action (semanal)
     │
     ├─ scripts/extract.sh
     │   Clona shallow (--depth 1 --filter=tree:0)
-    │   Extrai só os assets (SVG, PNG, TSX)
+    │   Extrai só os assets (SVG, PNG, TSX, etc)
     │
     ├─ scripts/generate-manifest.sh
     │   Escaneia build/ e gera manifest.json
-    │   + tags-index.json para busca
+    │   + tags-index.json para busca por tag
     │
-    └─ scripts/upload.sh
-        Sobe para Cloudflare R2 via S3 API
-        Cache: 1 ano (assets) / 15min (manifest)
+    └─ scripts/deploy.sh
+        Cria/atualiza branch 'assets' com os arquivos
+        Servido via jsDelivr CDN (cache global)
 ```
 
-## Deploy
+**Custo: ZERO.** Sem Cloudflare, sem R2, sem cartão de crédito.
 
-### 1. Bucket R2
+## URLs do CDN
 
-Crie um bucket no [Cloudflare R2](https://dash.cloudflare.com/?to=/:account/r2).
-
-### 2. Secrets no GitHub
-
-| Secret | Valor |
+| Recurso | URL |
 |---|---|
-| `R2_ENDPOINT` | `https://<id>.r2.cloudflarestorage.com` |
-| `R2_BUCKET` | Nome do bucket |
-| `R2_ACCESS_KEY_ID` | Access Key ID (R2 → Tokens de API) |
-| `R2_SECRET_ACCESS_KEY` | Secret Key |
-| `R2_PUBLIC_URL` | `https://assets.seu-dominio.com` (ou `https://pub-<hash>.r2.dev`) |
-
-### 3. Ativar
-
-Após configurar os secrets, faça um push pro repositório. O workflow roda automaticamente toda segunda ou manualmente via **Actions → Sync Asset Library → Run workflow**.
+| Base | `https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets/` |
+| Manifest | `https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets/manifest.json` |
+| Tags Index | `https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets/tags-index.json` |
+| Ícone específico | `https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets/icons/lucide/star.svg` |
 
 ## Consumo pelo Agente
 
 ```python
-import httpx, json
+import httpx
 
-BASE = "https://assets.seu-dominio.com"
+BASE = "https://cdn.jsdelivr.net/gh/developingv/design-assets-pipeline@assets"
 
-# 1. Pega o índice
+# 1. Descobrir todos os packs
 manifest = httpx.get(f"{BASE}/manifest.json").json()
 
-# 2. Busca por tag
+# 2. Buscar por tag
 tags = httpx.get(f"{BASE}/tags-index.json").json()
 packs_3d = tags.get("3d", [])  # → ["icons.3dicons"]
 
-# 3. Baixa assets específicos
-icon_url = f"{BASE}/icons/lucide/star.svg"
-svg = httpx.get(icon_url).text
+# 3. Baixar asset específico
+svg = httpx.get(f"{BASE}/icons/lucide/star.svg").text
 ```
 
 ## Adicionar novo repo
 
-Edite `config/repos.json`:
-
-```json
-{
-  "icons": [
-    {
-      "id": "meu-pack",
-      "repo": "user/repo",
-      "subdir": "caminho/dos/assets",
-      "formats": ["svg"],
-      "tags": ["novo", "estilo"],
-      "license": "MIT"
-    }
-  ]
-}
-```
-
-Próximo sync automaticamente inclui os novos assets.
+Edite `config/repos.json` seguindo o schema dos entries existentes.
