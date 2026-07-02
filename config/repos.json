@@ -1,0 +1,476 @@
+{
+  "icons": [
+    {
+      "id": "lucide",
+      "repo": "lucide-icons/lucide",
+      "subdir": "icons",
+      "tags": ["interface", "minimal", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1500,
+      "license": "ISC"
+    },
+    {
+      "id": "tabler",
+      "repo": "tabler/tabler-icons",
+      "subdir": "icons",
+      "tags": ["interface", "outline", "filled", "svg"],
+      "formats": ["svg"],
+      "count_approx": 4900,
+      "license": "MIT"
+    },
+    {
+      "id": "feather",
+      "repo": "feathericons/feather",
+      "subdir": "icons",
+      "tags": ["interface", "minimal", "svg"],
+      "formats": ["svg"],
+      "count_approx": 280,
+      "license": "MIT"
+    },
+    {
+      "id": "remixicon",
+      "repo": "RemixIcon/RemixIcon",
+      "subdir": "icons",
+      "tags": ["interface", "system", "svg"],
+      "formats": ["svg"],
+      "count_approx": 2600,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "octicons",
+      "repo": "primer/octicons",
+      "subdir": "icons",
+      "tags": ["github", "interface", "svg"],
+      "formats": ["svg"],
+      "count_approx": 500,
+      "license": "MIT"
+    },
+
+    {
+      "id": "phosphor",
+      "repo": "phosphor-icons/core",
+      "subdir": "icons",
+      "tags": ["interface", "duotone", "regular", "fill", "svg"],
+      "formats": ["svg"],
+      "count_approx": 900,
+      "license": "MIT"
+    },
+    {
+      "id": "heroicons",
+      "repo": "tailwindlabs/heroicons",
+      "subdir": "src/24/outline",
+      "tags": ["tailwind", "interface", "svg"],
+      "formats": ["svg"],
+      "count_approx": 500,
+      "license": "MIT"
+    },
+    {
+      "id": "boxicons",
+      "repo": "atisawd/boxicons",
+      "subdir": "svg",
+      "tags": ["interface", "regular", "solid", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1600,
+      "license": "MIT"
+    },
+    {
+      "id": "bootstrap-icons",
+      "repo": "twbs/icons",
+      "subdir": "icons",
+      "tags": ["bootstrap", "interface", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1900,
+      "license": "MIT"
+    },
+    {
+      "id": "simple-icons",
+      "repo": "simple-icons/simple-icons",
+      "subdir": "icons",
+      "tags": ["brands", "logos", "svg"],
+      "formats": ["svg"],
+      "count_approx": 3100,
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "css-gg",
+      "repo": "astrit/css.gg",
+      "subdir": "icons",
+      "tags": ["interface", "minimal", "svg"],
+      "formats": ["svg"],
+      "count_approx": 700,
+      "license": "MIT"
+    },
+    {
+      "id": "coreui-icons",
+      "repo": "coreui/coreui-icons",
+      "subdir": "svg",
+      "tags": ["interface", "free", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1500,
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "ikonate",
+      "repo": "mikolajdobrucki/ikonate",
+      "subdir": "icons",
+      "tags": ["interface", "stroke", "svg"],
+      "formats": ["svg"],
+      "count_approx": 400,
+      "license": "MIT"
+    },
+    {
+      "id": "lineawesome",
+      "repo": "icons8/line-awesome",
+      "subdir": "svg",
+      "tags": ["interface", "brands", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1500,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "ionicons",
+      "repo": "ionic-team/ionicons",
+      "subdir": "src/svg",
+      "tags": ["interface", "ionic", "svg"],
+      "formats": ["svg"],
+      "count_approx": 1300,
+      "license": "MIT"
+    },
+    {
+      "id": "material-icons",
+      "repo": "google/material-design-icons",
+      "subdir": "svg",
+      "tags": ["material", "google", "interface", "svg"],
+      "formats": ["svg"],
+      "count_approx": 2500,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "fontawesome",
+      "repo": "FortAwesome/Font-Awesome",
+      "subdir": "svgs",
+      "tags": ["interface", "brands", "solid", "regular", "svg"],
+      "formats": ["svg"],
+      "count_approx": 2000,
+      "license": "CC BY 4.0"
+    }
+  ],
+  "3d": [
+    {
+      "id": "3dicons",
+      "repo": "realvjy/3dicons",
+      "subdir": "src",
+      "tags": ["3d", "icons", "png", "colorful"],
+      "formats": ["png"],
+      "count_approx": 1400,
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "icons8-3d-kit",
+      "repo": "icons8/3d-kit",
+      "subdir": "",
+      "tags": ["3d", "business", "finance", "png"],
+      "formats": ["png"],
+      "count_approx": 120,
+      "license": "MIT"
+    },
+    {
+      "id": "threedee",
+      "repo": "threedeestudio/threedee",
+      "subdir": "public",
+      "tags": ["3d", "characters", "glb", "illustrations"],
+      "formats": ["glb", "blend"],
+      "count_approx": 50,
+      "license": "MIT"
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "unDraw",
+      "repo": "unDraw/unDraw",
+      "subdir": "src",
+      "tags": ["illustrations", "svg", "flat"],
+      "formats": ["svg"],
+      "count_approx": 350,
+      "license": "MIT"
+    },
+    {
+      "id": "illlustrations",
+      "repo": "illlustrations/illlustrations",
+      "subdir": "src",
+      "tags": ["illustrations", "svg", "open-source"],
+      "formats": ["svg"],
+      "count_approx": 100,
+      "license": "MIT"
+    },
+    {
+      "id": "manypixels",
+      "repo": "manypixels/illustrations",
+      "subdir": "svg",
+      "tags": ["illustrations", "svg", "royalty-free"],
+      "formats": ["svg"],
+      "count_approx": 200,
+      "license": "CC0"
+    },
+    {
+      "id": "flowbite-illustrations",
+      "repo": "themesberg/flowbite-illustrations",
+      "subdir": "public",
+      "tags": ["illustrations", "3d", "svg", "tailwind"],
+      "formats": ["svg"],
+      "count_approx": 60,
+      "license": "MIT"
+    },
+    {
+      "id": "humaaans",
+      "repo": "agnostic-ap/humaaans",
+      "subdir": "illlustrations",
+      "tags": ["illustrations", "people", "svg", "mix-match"],
+      "formats": ["svg"],
+      "count_approx": 100,
+      "license": "CC0"
+    },
+    {
+      "id": "404-illustrations",
+      "repo": "nicolesaidy/awesome-404-illustrations",
+      "subdir": "",
+      "tags": ["illustrations", "404", "svg"],
+      "formats": ["svg"],
+      "count_approx": 20,
+      "license": "MIT"
+    },
+    {
+      "id": "storyset",
+      "repo": "Nifled/storyset-svgs",
+      "subdir": "svgs",
+      "tags": ["illustrations", "svg", "animated", "customizable"],
+      "formats": ["svg"],
+      "count_approx": 100,
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "control-illustrations",
+      "repo": "controlrocks/control-illustrations",
+      "subdir": "svg",
+      "tags": ["illustrations", "svg", "customizable"],
+      "formats": ["svg"],
+      "count_approx": 108,
+      "license": "MIT"
+    },
+    {
+      "id": "black-illustrations",
+      "repo": "black-illustrations/black-illustrations",
+      "subdir": "svg",
+      "tags": ["illustrations", "diversity", "people", "svg"],
+      "formats": ["svg"],
+      "count_approx": 40,
+      "license": "MIT"
+    },
+    {
+      "id": "stubborn-illustrations",
+      "repo": "stubbornillustrations/stubborn-illustrations",
+      "subdir": "svg",
+      "tags": ["illustrations", "startup", "svg"],
+      "formats": ["svg"],
+      "count_approx": 30,
+      "license": "MIT"
+    }
+  ],
+  "design_systems": [
+    {
+      "id": "ant-design",
+      "repo": "ant-design/ant-design",
+      "subdir": "components",
+      "tags": ["react", "components", "ui-kit"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 100,
+      "license": "MIT"
+    },
+    {
+      "id": "primer-react",
+      "repo": "primer/react",
+      "subdir": "src",
+      "tags": ["github", "react", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 80,
+      "license": "MIT"
+    },
+    {
+      "id": "primer-css",
+      "repo": "primer/css",
+      "subdir": "src",
+      "tags": ["github", "css", "components"],
+      "formats": ["scss", "css"],
+      "count_approx": 60,
+      "license": "MIT"
+    },
+    {
+      "id": "polaris",
+      "repo": "Shopify/polaris",
+      "subdir": "polaris-react/src",
+      "tags": ["shopify", "react", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 60,
+      "license": "MIT"
+    },
+    {
+      "id": "material-ui",
+      "repo": "mui/material-ui",
+      "subdir": "packages/mui-material/src",
+      "tags": ["material", "google", "react", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 80,
+      "license": "MIT"
+    },
+    {
+      "id": "react-spectrum",
+      "repo": "adobe/react-spectrum",
+      "subdir": "packages",
+      "tags": ["adobe", "react", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 60,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "carbon",
+      "repo": "carbon-design-system/carbon",
+      "subdir": "packages",
+      "tags": ["ibm", "react", "components", "design-system"],
+      "formats": ["tsx", "ts", "scss"],
+      "count_approx": 100,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "reach-ui",
+      "repo": "reach/reach-ui",
+      "subdir": "packages",
+      "tags": ["react", "accessible", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 20,
+      "license": "MIT"
+    },
+    {
+      "id": "chakra-ui",
+      "repo": "chakra-ui/chakra-ui",
+      "subdir": "packages/components/src",
+      "tags": ["react", "components", "accessible"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 40,
+      "license": "MIT"
+    },
+    {
+      "id": "radix-themes",
+      "repo": "radix-ui/themes",
+      "subdir": "packages",
+      "tags": ["react", "components", "accessible"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 30,
+      "license": "MIT"
+    }
+  ],
+  "ui_libraries": [
+    {
+      "id": "radix-primitives",
+      "repo": "radix-ui/primitives",
+      "subdir": "packages",
+      "tags": ["react", "headless", "accessible", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 30,
+      "license": "MIT"
+    },
+    {
+      "id": "shadcn-ui",
+      "repo": "shadcn-ui/ui",
+      "subdir": "apps/www/public/registry",
+      "tags": ["react", "tailwind", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 50,
+      "license": "MIT"
+    },
+    {
+      "id": "daisyui",
+      "repo": "saadeghi/daisyui",
+      "subdir": "src",
+      "tags": ["tailwind", "css", "components"],
+      "formats": ["js", "css"],
+      "count_approx": 50,
+      "license": "MIT"
+    },
+    {
+      "id": "headlessui",
+      "repo": "tailwindlabs/headlessui",
+      "subdir": "packages",
+      "tags": ["react", "vue", "headless", "accessible", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 20,
+      "license": "MIT"
+    },
+    {
+      "id": "ariakit",
+      "repo": "ariakit/ariakit",
+      "subdir": "packages",
+      "tags": ["react", "headless", "accessible", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 30,
+      "license": "MIT"
+    },
+    {
+      "id": "react-aria",
+      "repo": "adobe/react-spectrum",
+      "subdir": "packages/react-aria-components/src",
+      "tags": ["react", "headless", "accessible", "components"],
+      "formats": ["tsx", "ts"],
+      "count_approx": 40,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "zag",
+      "repo": "chakra-ui/zag",
+      "subdir": "packages",
+      "tags": ["framework-agnostic", "headless", "components"],
+      "formats": ["ts", "tsx"],
+      "count_approx": 20,
+      "license": "MIT"
+    }
+  ],
+  "fonts": [
+    {
+      "id": "fontsource",
+      "repo": "fontsource/fontsource",
+      "subdir": "fonts",
+      "tags": ["fonts", "open-source", "self-host"],
+      "formats": ["woff2", "woff", "ttf"],
+      "count_approx": 1600,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "nerd-fonts",
+      "repo": "ryanoasis/nerd-fonts",
+      "subdir": "patched-fonts",
+      "tags": ["fonts", "icons", "developer"],
+      "formats": ["ttf", "otf"],
+      "count_approx": 50,
+      "license": "MIT"
+    }
+  ],
+  "mockups": [
+    {
+      "id": "ls-graphics",
+      "repo": "ls-graphics/ls-graphics-free-mockups",
+      "subdir": "free-mockups",
+      "tags": ["mockups", "psd", "device"],
+      "formats": ["psd", "png", "sketch"],
+      "count_approx": 100,
+      "license": "MIT"
+    },
+    {
+      "id": "mockup-markup",
+      "repo": "designedbydone/mockup-markup",
+      "subdir": "mockups",
+      "tags": ["mockups", "html", "css"],
+      "formats": ["html", "css"],
+      "count_approx": 20,
+      "license": "MIT"
+    }
+  ]
+}
